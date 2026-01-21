@@ -7,6 +7,8 @@ import net.minecraft.Util;
 import net.minecraft.client.renderer.RenderStateShard;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.resources.ResourceLocation;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.util.function.Function;
 
@@ -38,6 +40,7 @@ public class ApoapsisRenderTypes {
         return RenderType.create("skybox", DefaultVertexFormat.NEW_ENTITY, VertexFormat.Mode.QUADS, 1536,
                 true, false, state);
     });
+    private static final Logger log = LoggerFactory.getLogger(ApoapsisRenderTypes.class);
 
     public static RenderType planet(ResourceLocation tex) { return PLANET.apply(tex); }
     public static RenderType skybox(ResourceLocation tex) { return SKYBOX.apply(tex); }

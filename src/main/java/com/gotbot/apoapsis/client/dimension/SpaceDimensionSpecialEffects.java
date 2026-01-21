@@ -13,7 +13,7 @@ import org.joml.Matrix4f;
 @OnlyIn(Dist.CLIENT)
 public final class SpaceDimensionSpecialEffects extends DimensionSpecialEffects {
     public SpaceDimensionSpecialEffects() {
-        super(Float.NaN, false, SkyType.NONE, true, true);
+        super(Float.NaN, false, SkyType.END, true, true);
     }
 
     @Override
@@ -28,11 +28,6 @@ public final class SpaceDimensionSpecialEffects extends DimensionSpecialEffects 
 
     @Override
     public boolean renderClouds(ClientLevel level, int ticks, float partialTick, PoseStack poseStack, double camX, double camY, double camZ, Matrix4f modelViewMatrix, Matrix4f projectionMatrix) {
-        return true;
-    }
-
-    @Override
-    public boolean renderSky(ClientLevel level, int ticks, float partialTick, Matrix4f modelViewMatrix, Camera camera, Matrix4f projectionMatrix, boolean isFoggy, Runnable setupFog) {
         return true;
     }
 
