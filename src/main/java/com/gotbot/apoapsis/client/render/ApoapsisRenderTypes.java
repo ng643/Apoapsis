@@ -42,6 +42,10 @@ public class ApoapsisRenderTypes {
     });
     private static final Logger log = LoggerFactory.getLogger(ApoapsisRenderTypes.class);
 
-    public static RenderType planet(ResourceLocation tex) { return PLANET.apply(tex); }
-    public static RenderType skybox(ResourceLocation tex) { return SKYBOX.apply(tex); }
+    public static RenderType planet(ResourceLocation tex) {
+        return PLANET.apply(tex);
+    }
+    public static RenderType skybox(ResourceLocation tex) {
+        return SKYBOX.apply(tex);
+    }
 }

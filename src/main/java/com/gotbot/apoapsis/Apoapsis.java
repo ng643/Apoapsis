@@ -10,6 +10,5 @@ public class Apoapsis {
     public static final String MODID = "apoapsis";
 
     public Apoapsis(IEventBus modEventBus, ModContainer modContainer) {
-        modEventBus.addListener(ApoapsisNetwork::registerPayloadHandlers);
     }
 }
